@@ -1,0 +1,29 @@
+{
+	"name": "npmi-presets",
+	"version": "1.0.0",
+	"description": "Create npm install presets",
+	"main": "index.js",
+	"scripts": {
+		"dev": "nodemon src/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/elcoosp/npmi-presets.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/elcoosp/npmi-presets/issues"
+	},
+	"homepage": "https://github.com/elcoosp/npmi-presets#readme",
+	"dependencies": {
+		"inquirer": "^6.2.0",
+		"inquirer-autocomplete-prompt": "^1.0.1",
+		"lodash.throttle": "^4.1.1",
+		"node-fetch": "^2.2.0"
+	},
+	"devDependencies": {
+		"nodemon": "^1.18.4"
+	}
+}
