@@ -2,6 +2,7 @@
 const inquirer = require('inquirer')
 const throttle = require('lodash.throttle')
 const Npm = require('./Npm')
+const Store = require('./Store')
 inquirer.registerPrompt('autocomplete', require('inquirer-autocomplete-prompt'))
 
 const P = {
@@ -34,7 +35,14 @@ const getSelectedPackages = async (type, askAgain = true, pkgs = []) => {
 	return getSelectedPackages(type, shouldAddMorePkgs, pkgs.concat(selectedPkg))
 }
 ;(async () => {
+	console.log(Store.get('presets'))
+
+	const { presetName } = await inquirer.prompt([P.presetName])
 	const deps = await getSelectedPackages('REGULAR DEPENDENCY')
 	const devDeps = await getSelectedPackages('DEV DEPENDENCY')
-	console.log({ deps, devDeps })
+	Store.addPreset(presetName, {
+		deps,
+		devDeps
+	})
+	console.log(Store.get('presets'))
 })()
