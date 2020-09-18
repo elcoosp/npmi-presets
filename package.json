@@ -22,7 +22,7 @@
 		"inquirer": "^6.2.0",
 		"inquirer-autocomplete-prompt": "^1.0.1",
 		"lodash.throttle": "^4.1.1",
-		"node-fetch": "^2.2.0"
+		"node-fetch": "^2.6.1"
 	},
 	"devDependencies": {
 		"nodemon": "^1.18.4"
