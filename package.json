@@ -19,7 +19,7 @@
 	"homepage": "https://github.com/elcoosp/npmi-presets#readme",
 	"dependencies": {
 		"configstore": "^4.0.0",
-		"inquirer": "^6.2.0",
+		"inquirer": "^7.0.5",
 		"inquirer-autocomplete-prompt": "^1.0.1",
 		"lodash.throttle": "^4.1.1",
 		"node-fetch": "^2.2.0"
